@@ -1,0 +1,86 @@
+ local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local PetSimulatorVoidhub = Instance.new("TextButton")
+local InfinintYeild = Instance.new("TextButton")
+local BasketballShootingSimulator = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(251, 255, 0)
+main.Position = UDim2.new(0.300312817, 0, 0.140233725, 0)
+main.Size = UDim2.new(0, 339, 0, 413)
+main.Active = true
+main.Draggable = true
+
+Label.Name = "Label"
+Label.Parent = main
+Label.BackgroundColor3 = Color3.fromRGB(0, 12, 255)
+Label.Size = UDim2.new(0, 339, 0, 55)
+Label.Font = Enum.Font.SourceSans
+Label.Text = "Pet Simulator X GUI V5.1     |  Made By Pugmaster9898"
+Label.TextColor3 = Color3.fromRGB(0, 0, 0)
+Label.TextSize = 14.000
+
+PetSimulatorVoidhub.Name = "Pet Simulator Void hub"
+PetSimulatorVoidhub.Parent = main
+PetSimulatorVoidhub.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+PetSimulatorVoidhub.Position = UDim2.new(0, 0, 0.27845037, 0)
+PetSimulatorVoidhub.Size = UDim2.new(0, 200, 0, 50)
+PetSimulatorVoidhub.Font = Enum.Font.SourceSans
+PetSimulatorVoidhub.Text = "Pet Simulator Void hub"
+PetSimulatorVoidhub.TextColor3 = Color3.fromRGB(255, 0, 0)
+PetSimulatorVoidhub.TextSize = 14.000
+PetSimulatorVoidhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://voidhub.glitch.me/Premium%20Script%20Winning!.lua", true))()
+end)
+
+InfinintYeild.Name = "InfinintYeild"
+InfinintYeild.Parent = main
+InfinintYeild.BackgroundColor3 = Color3.fromRGB(0, 12, 255)
+InfinintYeild.BorderColor3 = Color3.fromRGB(0, 4, 255)
+InfinintYeild.Position = UDim2.new(0, 0, 0.460048437, 0)
+InfinintYeild.Size = UDim2.new(0, 200, 0, 50)
+InfinintYeild.Font = Enum.Font.SourceSans
+InfinintYeild.Text = "Infinint Yeild"
+InfinintYeild.TextColor3 = Color3.fromRGB(255, 0, 0)
+InfinintYeild.TextSize = 14.000
+InfinintYeild.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+BasketballShootingSimulator.Name = "Basketball Shooting Simulator"
+BasketballShootingSimulator.Parent = main
+BasketballShootingSimulator.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+BasketballShootingSimulator.Position = UDim2.new(0, 0, 0.876513362, 0)
+BasketballShootingSimulator.Size = UDim2.new(0, 339, 0, 50)
+BasketballShootingSimulator.Font = Enum.Font.SourceSans
+BasketballShootingSimulator.Text = "Basketball Shooting Simulator Ambot"
+BasketballShootingSimulator.TextColor3 = Color3.fromRGB(0, 0, 0)
+BasketballShootingSimulator.TextSize = 14.000
+BasketballShootingSimulator.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Pugmaster9898/name/main/source", true))()
+end)
+
+-- Scripts:
+
+local function PQPLL_fake_script() -- main.LocalScript 
+	local script = Instance.new('LocalScript', main)
+
+	player = game.Players.LocalPlayer
+	
+	player:GetMouse().KeyDown:Connect(function(key)
+		if key == "p" and script.Parent.Visible == false then
+			script.Parent.Visible = true
+		else
+			if key == "p" and script.Parent.Visible == true then
+				script.Parent.Visible = false
+			end
+		end
+	end)
+end
+coroutine.wrap(PQPLL_fake_script)() 
